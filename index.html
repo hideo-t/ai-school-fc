@@ -131,10 +131,26 @@
     .hero-cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-bottom:32px}
     .hero-trust{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;color:var(--text-light);font-size:.85rem}
     .hero-trust span::before{content:'✓ ';color:var(--success);font-weight:900}
+    .cross-banner{
+      background:linear-gradient(90deg,#FF7B47 0%,#E65A24 100%);
+      color:#fff;padding:14px 22px;border-radius:12px;
+      max-width:880px;margin:28px auto 0;
+      display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+      box-shadow:0 4px 14px rgba(255,123,71,.32);text-align:left;
+    }
+    .cross-banner .txt{font-size:.95rem;font-weight:500;flex:1;min-width:240px}
+    .cross-banner .txt strong{font-weight:800}
+    .cross-banner a.btn-x{
+      background:#fff;color:var(--accent-dark);padding:10px 20px;border-radius:999px;
+      font-weight:800;font-size:.9rem;white-space:nowrap;
+      transition:transform .15s,background .15s,color .15s;
+    }
+    .cross-banner a.btn-x:hover{background:var(--primary);color:#fff;transform:translateY(-1px)}
     @media (max-width:768px){
       .hero{padding:60px 0 50px}
       .hero h1{font-size:2rem;line-height:1.45}
       .hero-sub{font-size:1.05rem}
+      .cross-banner{flex-direction:column;text-align:center}
     }
 
     /* ========================================================
@@ -443,6 +459,10 @@
       <span>初年度回収可能</span>
       <span>カリキュラム作成不要</span>
       <span>講師サポートあり</span>
+    </div>
+    <div class="cross-banner">
+      <div class="txt">🍙 <strong>カリキュラムの実証PoCを、実際に触ってみる</strong><br><span style="opacity:.92;font-size:.85rem">こども食堂予約システム「ぽかぽか食堂」が現在稼働中</span></div>
+      <a href="https://hideo-t.github.io/pokapoka/lp/" target="_blank" rel="noopener" class="btn-x">ぽかぽか食堂を見る →</a>
     </div>
   </div>
 </section>
